@@ -1,16 +1,16 @@
 function displayMyNumber() {
-    const myNumber = document.getElementById("myNumber").value;
+    let myNumber = document.getElementById("myNumber").value;
     document.getElementById("myNumberOutput").innerText = "Giá trị của biến myNumber là: " + myNumber;
 }
 
 function displayStringLength() {
-    const myString = document.getElementById("myString").value;
+    let myString = document.getElementById("myString").value;
     document.getElementById("stringLengthOutput").innerText = "Độ dài của chuỗi là: " + myString.length;
 }
 
 function displayGenderInfo() {
-    const isMale = document.getElementById("isMale").value;
-    const genderInfoOutput = document.getElementById("genderInfoOutput");
+    let isMale = document.getElementById("isMale").value;
+    let genderInfoOutput = document.getElementById("genderInfoOutput");
     if (isMale === "true") {
         genderInfoOutput.innerText = "Người này là nam giới";
     } else if (isMale === "false") {
@@ -21,8 +21,8 @@ function displayGenderInfo() {
 }
 
 function checkEvenOrOdd() {
-    const number = document.getElementById("checkEvenOdd").value;
-    const evenOddOutput = document.getElementById("evenOddOutput");
+    let number = document.getElementById("checkEvenOdd").value;
+    let evenOddOutput = document.getElementById("evenOddOutput");
     if (number % 2 === 0) {
         evenOddOutput.innerText = "Số chẵn";
     } else {
@@ -31,8 +31,8 @@ function checkEvenOrOdd() {
 }
 
 function checkPositiveInteger() {
-    const number = document.getElementById("checkPositiveInteger").value;
-    const positiveIntegerOutput = document.getElementById("positiveIntegerOutput");
+    let number = document.getElementById("checkPositiveInteger").value;
+    let positiveIntegerOutput = document.getElementById("positiveIntegerOutput");
     if (number > 0 && Number.isInteger(Number(number))) {
         positiveIntegerOutput.innerText = "Số nguyên dương";
     } else {
@@ -41,8 +41,8 @@ function checkPositiveInteger() {
 }
 
 function checkLeapYear() {
-    const year = document.getElementById("checkLeapYear").value;
-    const leapYearOutput = document.getElementById("leapYearOutput");
+    let year = document.getElementById("checkLeapYear").value;
+    let leapYearOutput = document.getElementById("leapYearOutput");
     if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
         leapYearOutput.innerText = year + " là năm nhuận";
     } else {
@@ -51,7 +51,7 @@ function checkLeapYear() {
 }
 
 function sumToN() {
-    const n = document.getElementById("sumToN").value;
+    let n = document.getElementById("sumToN").value;
     let sum = 0;
     for (let i = 1; i <= n; i++) {
         sum += i;
@@ -60,7 +60,7 @@ function sumToN() {
 }
 
 function calculateFactorial() {
-    const n = document.getElementById("factorial").value;
+    let n = document.getElementById("factorial").value;
     let factorial = 1;
     let i = 1;
     while (i <= n) {
@@ -71,7 +71,7 @@ function calculateFactorial() {
 }
 
 function printMultiplicationTable() {
-    const multiplicationTableOutput = document.getElementById("multiplicationTableOutput");
+    let multiplicationTableOutput = document.getElementById("multiplicationTableOutput");
     multiplicationTableOutput.innerText = "";
     for (let i = 2; i <= 9; i++) {
         multiplicationTableOutput.innerText += "Bảng cửu chương của " + i + ":\n";
