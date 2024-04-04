@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+
+<body>
+    <h1>Quản lý sản phẩm</h1>
+    <div>
+        <h2>Thêm sản phẩm mới</h2>
+        <input type="text" id="new-product-name" placeholder="Tên sản phẩm">
+        <input type="text" id="new-product-price" placeholder="Giá">
+        <input type="text" id="new-product-quantity" placeholder="Số lượng">
+        <input type="text" id="new-product-color" placeholder="Màu sắc">
+        <button onclick="addProduct()">Thêm</button>
+    </div>
+    <br>
+    <div id="edit-product-div" style="display: none;">
+        <h2>Sửa sản phẩm</h2>
+        <input type="text" id="edit-product-name">
+        <input type="text" id="edit-product-price">
+        <input type="text" id="edit-product-quantity">
+        <input type="text" id="edit-product-color">
+        <button onclick="saveEdit()">Lưu</button>
+    </div>
+    <br>
+    <div id="product-list"></div>
+
+    <script src="functionex1.js"></script>
+</body>
+
+</html>
